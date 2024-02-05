@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="com.heulwen.base.entity.FileInfo">
+        <table name="file_info" schema="heulwen" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id" precision="20"/>
+            </id>
+            <basic name="fileName">
+                <column name="file_name" length="1000"/>
+            </basic>
+            <basic name="filePath">
+                <column name="file_path" length="5000"/>
+            </basic>
+            <basic name="fileSize">
+                <column name="file_size" precision="20"/>
+            </basic>
+            <basic name="fileType">
+                <column name="file_type" nullable="false" length="1000"/>
+            </basic>
+            <basic name="createUser">
+                <column name="create_user" nullable="false" length="500"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="updateUser">
+                <column name="update_user" nullable="false" length="500"/>
+            </basic>
+            <basic name="updateTime">
+                <column name="update_time" nullable="false" precision="-1"/>
+            </basic>
+            <basic name="objectType">
+                <column name="object_type" length="500"/>
+            </basic>
+            <basic name="objectId">
+                <column name="object_id" precision="20"/>
+            </basic>
+            <basic name="status">
+                <column name="status" nullable="false" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="com.heulwen.base.entity.AuthoriticationEntity">
+        <table name="authoritication" schema="heulwen" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id"/>
+            </id>
+            <basic name="userName">
+                <column name="user_name"/>
+            </basic>
+            <basic name="authority">
+                <column name="authority"/>
+            </basic>
+            <basic name="userId">
+                <column name="user_id"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="com.heulwen.base.entity.FileInfoEntity">
+        <table name="file_info" schema="heulwen" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id"/>
+            </id>
+            <basic name="fileName">
+                <column name="file_name"/>
+            </basic>
+            <basic name="filePath">
+                <column name="file_path"/>
+            </basic>
+            <basic name="fileSize">
+                <column name="file_size"/>
+            </basic>
+            <basic name="fileType">
+                <column name="file_type"/>
+            </basic>
+            <basic name="createUser">
+                <column name="create_user"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time"/>
+            </basic>
+            <basic name="updateUser">
+                <column name="update_user"/>
+            </basic>
+            <basic name="updateTime">
+                <column name="update_time"/>
+            </basic>
+            <basic name="objectType">
+                <column name="object_type"/>
+            </basic>
+            <basic name="objectId">
+                <column name="object_id"/>
+            </basic>
+            <basic name="status">
+                <column name="status"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="com.heulwen.base.entity.UserEntity">
+        <table name="user" schema="heulwen" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id"/>
+            </id>
+            <basic name="userName">
+                <column name="user_name"/>
+            </basic>
+            <basic name="password">
+                <column name="password"/>
+            </basic>
+            <basic name="enable">
+                <column name="enable"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="com.heulwen.base.entity.AuthenticationEntity">
+        <table name="authentication" schema="heulwen" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id"/>
+            </id>
+            <basic name="userName">
+                <column name="user_name"/>
+            </basic>
+            <basic name="authority">
+                <column name="authority"/>
+            </basic>
+            <basic name="userId">
+                <column name="user_id"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="com.heulwen.base.entity.FileInfoEntity">
+        <table name="file_info" schema="heulwen" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id"/>
+            </id>
+            <basic name="fileName">
+                <column name="file_name"/>
+            </basic>
+            <basic name="filePath">
+                <column name="file_path"/>
+            </basic>
+            <basic name="fileSize">
+                <column name="file_size"/>
+            </basic>
+            <basic name="fileType">
+                <column name="file_type"/>
+            </basic>
+            <basic name="createUser">
+                <column name="create_user"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time"/>
+            </basic>
+            <basic name="updateUser">
+                <column name="update_user"/>
+            </basic>
+            <basic name="updateTime">
+                <column name="update_time"/>
+            </basic>
+            <basic name="objectType">
+                <column name="object_type"/>
+            </basic>
+            <basic name="objectId">
+                <column name="object_id"/>
+            </basic>
+            <basic name="status">
+                <column name="status"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="com.heulwen.base.entity.UserEntity">
+        <table name="user" schema="heulwen" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id"/>
+            </id>
+            <basic name="userName">
+                <column name="user_name"/>
+            </basic>
+            <basic name="password">
+                <column name="password"/>
+            </basic>
+            <basic name="enable">
+                <column name="enable"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="com.heulwen.base.entity.Authentication">
+        <table name="authentication" schema="heulwen" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id"/>
+            </id>
+            <basic name="userName">
+                <column name="user_name"/>
+            </basic>
+            <basic name="authority">
+                <column name="authority"/>
+            </basic>
+            <basic name="userId">
+                <column name="user_id"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="com.heulwen.base.entity.FileInfo">
+        <table name="file_info" schema="heulwen" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id"/>
+            </id>
+            <basic name="fileName">
+                <column name="file_name"/>
+            </basic>
+            <basic name="filePath">
+                <column name="file_path"/>
+            </basic>
+            <basic name="fileSize">
+                <column name="file_size"/>
+            </basic>
+            <basic name="fileType">
+                <column name="file_type"/>
+            </basic>
+            <basic name="createUser">
+                <column name="create_user"/>
+            </basic>
+            <basic name="createTime">
+                <column name="create_time"/>
+            </basic>
+            <basic name="updateUser">
+                <column name="update_user"/>
+            </basic>
+            <basic name="updateTime">
+                <column name="update_time"/>
+            </basic>
+            <basic name="objectType">
+                <column name="object_type"/>
+            </basic>
+            <basic name="objectId">
+                <column name="object_id"/>
+            </basic>
+            <basic name="status">
+                <column name="status"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="com.heulwen.base.entity.User">
+        <table name="user" schema="heulwen" catalog=""/>
+        <attributes>
+            <id name="id">
+                <column name="id"/>
+            </id>
+            <basic name="userName">
+                <column name="user_name"/>
+            </basic>
+            <basic name="password">
+                <column name="password"/>
+            </basic>
+            <basic name="enable">
+                <column name="enable"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
